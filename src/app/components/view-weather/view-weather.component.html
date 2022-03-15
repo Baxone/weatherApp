@@ -1,0 +1,14 @@
+<div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+  <div class="row d-flex justify-content-center px-3">
+    <div class="card" [ngStyle]="{'background-image': 'url(../../../assets/images/'+ icon +'.jpg)'}">
+      <h2 class="ms-auto me-4 mt-3 mb-0">{{myCity?.name}}</h2>
+      <p class="ms-auto me-4 mb-0 med-font">{{myCity?.weather[0].main}}</p>
+      <h1 class="ms-auto me-4 large-font">{{myCity?.main.temp | number:'2.0-0' }}&deg;</h1>
+      <p class="ms-auto me-4 ">Humedad: {{myCity?.main.humidity}} | Max: {{myCity?.main.temp_max}} | Min:
+        {{myCity?.main.temp_min}}</p>
+      <div class="semicircle">
+        <img [src]="'https://openweathermap.org/img/w/'+ icon +'.png'" alt="">
+      </div>
+    </div>
+  </div>
+</div>

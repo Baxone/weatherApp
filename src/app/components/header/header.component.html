@@ -1,0 +1,10 @@
+<nav class="navbar navbar-dark bg-dark p-4 borde-corporativo">
+  <div class="container-fluid">
+    <a class="navbar-brand">IDBootcamps <span class="corporativo fw-bold">Weather</span></a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Introduce una ciudad" [(ngModel)]="city" name="city">
+      <button (click)="getCity()" class="btn btn-outline-success" type="submit"><i
+          class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+</nav>

@@ -1,0 +1,5 @@
+#####
+GET https://api.openweathermap.org/data/2.5/weather?q=madrid&appid=a642fb44a5475bdee3ff15d1071c98bb
+
+
+
